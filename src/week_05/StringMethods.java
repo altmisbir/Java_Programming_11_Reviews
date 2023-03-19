@@ -44,6 +44,48 @@ public class StringMethods {
 
         System.out.println(str1.indexOf("b cd"));//2
 
+        //if you want to find the index of letters from and to start
+        System.out.println(str1.lastIndexOf(' '));//8
+
+        //if you want to delete or replace chars or string
+
+
+        System.out.println(str1.replace('a', 'z'));
+        // '' we can not use like this because there is no emty char
+        //System.out.println(str1.replace('', ''));
+
+        System.out.println(str1.replace(" ", ""));
+
+        //delete or replace the first matching ona
+
+        System.out.println(str1.replaceFirst(" ",""));
+
+        // how we can get the part of the string
+                     //0123456
+        String result="About 183,000,000 results (0.39 seconds)";
+        System.out.println(result.substring(6, 16 + 1));
+        //About 90,300,000 results (0.41 seconds)
+
+        String result2="About 183,000,000 results (0.39 seconds)";
+        String result3="About 90,300,000 results (0.41 seconds)";
+        int indexOfSpace=result2.indexOf(' ');//5
+        int indexOfFirstDigit=indexOfSpace+1;
+        int indexOfResultWithSpace=result2.indexOf(" results");
+        System.out.println(result2.substring(indexOfFirstDigit, indexOfResultWithSpace));
+
+        String name = "Adam";
+        //how to dublicate your string
+        //System.out.println(name+name+name);
+
+        System.out.println(name.repeat(5));
+
+        //how you check your string is empty or not (lenght=0)
+        String str3 = "";
+        String str4 = " ";
+        System.out.println(str3.isEmpty());//true
+        System.out.println(str4.isEmpty());//false
+
+
 
     }
 }
