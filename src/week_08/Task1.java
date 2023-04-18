@@ -28,9 +28,9 @@ public class Task1 {
 
         String result = "";
         if (number%2==0){
-            return "Even";
+            result= "Even";
         }else {
-            return "Odd";
+            result = "Odd";
         }
         return result;
 
