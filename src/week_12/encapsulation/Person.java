@@ -1,4 +1,4 @@
-package src.week_12;
+package src.week_12.encapsulation;
 
 public class Person {
     private String name;
