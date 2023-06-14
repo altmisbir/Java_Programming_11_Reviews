@@ -1,4 +1,4 @@
-package src.week_11.oop;
+package src.week_11.custom_classes;
 
 public class CustomClassIntro {
     public static void main(String[] args) {
